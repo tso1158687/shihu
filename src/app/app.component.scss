@@ -1,8 +1,63 @@
-:host{
-    width: 100vw;
-    height: 100vh;
-    background-color: #aba3a3;
+:host {
+  width: 100vw;
+  height: 100vh;
+  background-color: #aba3a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  z-index: 10;
+}
+.animate-area {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  > div {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 50%;
+    height: 50vh;
+  }
+  .top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .top-right {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .bottom-right {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .bottom-left {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.circle {
+  border-radius: 100%;
+  display: block;
+  background: #40809d;
+}
+
+.circle-150 {
+  width: 150px;
+  height: 150px;
+}
+.circle-200 {
+  width: 200px;
+  height: 200px;
+}
+.circle-250 {
+  width: 250px;
+  height: 250px;
+}
+.circle-300 {
+  width: 300px;
+  height: 300px;
 }
