@@ -1,0 +1,16 @@
+{
+    "name": "詩乎",
+    "version": "0.0.1",
+    "description": "大家一起來讀詩",
+    "permissions": ["storage", "tabs"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }
+  
