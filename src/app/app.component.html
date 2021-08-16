@@ -1,9 +1,17 @@
 <!-- <h1>今人不見古時月，今月曾經照古人</h1> -->
 <!-- animate__animated animate__bounce animate__slower animate__infinite -->
-<h1 class="animate__animated animate__fadeIn animate__slower">
-  今人不見古時月，今月曾經照古人
-</h1>
-<div class="animate-area">
+<div class="main-area animate__animated animate__fadeIn animate__slower">
+  <div class="shi-info">
+    <div class="title">{{shiList[currentIndex].title}}</div>
+    <span class="author">{{shiList[currentIndex].author}}</span>
+  </div>
+  <ng-container *ngFor="let sentence of shiList[currentIndex].content">
+    <h1>{{sentence}}</h1>
+  </ng-container>
+  <button (click)="next()">下一首</button>
+</div>
+
+<!-- <div class="animate-area">
   <div class="top-left">
     <div
       class="
@@ -36,4 +44,4 @@
       "
     ></div>
   </div>
-</div>
+</div> -->

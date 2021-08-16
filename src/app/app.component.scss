@@ -6,8 +6,31 @@
   justify-content: center;
   align-items: center;
 }
-h1 {
+.main-area {
   z-index: 10;
+  writing-mode: vertical-rl;
+}
+
+.shi-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .author{
+    color: white;
+    background-color: rgb(170, 25, 25);
+    border-radius: 5px;
+    padding: 3px;
+    width: 20px;
+    letter-spacing: 3px;
+    // box-shadow:inset 0px 0px 0px 10px rgb(170, 25, 25);
+  }
+}
+h1 {
+  font-weight: 400;
 }
 .animate-area {
   display: flex;

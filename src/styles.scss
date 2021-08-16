@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
 @import "~animate.css/animate.min";
 body{
     margin: 0;
@@ -24,7 +24,7 @@ body {
         left:50%;
         min-width:300vw;
         min-height:300vw;
-        background-color:#fff;
+        background-color:#40809d;
         animation-name: rotate;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
