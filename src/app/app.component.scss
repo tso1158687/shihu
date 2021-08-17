@@ -32,6 +32,13 @@
 h1 {
   font-weight: 400;
 }
+
+.setting{
+  position:absolute;
+  bottom: 100px;
+  right: 70px;
+  z-index: 99;
+}
 .animate-area {
   display: flex;
   z-index: 2;
