@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +7,9 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   faCog = faCog;
+  faCaretRight = faCaretRight;
   currentIndex = 0;
+  isShowDropdown = false;
   shiList = [
     {
       title: '錦瑟',
@@ -30,5 +32,10 @@ export class AppComponent {
   ];
   next(): void {
     this.currentIndex++;
+  }
+
+  showDropdown() {
+    console.log('show fropdown')
+    this.isShowDropdown = !this.isShowDropdown;
   }
 }

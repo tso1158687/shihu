@@ -2,15 +2,24 @@
 <!-- animate__animated animate__bounce animate__slower animate__infinite -->
 <div class="main-area animate__animated animate__fadeIn animate__slower">
   <div class="shi-info">
-    <div class="title">{{shiList[currentIndex].title}}</div>
-    <span class="author">{{shiList[currentIndex].author}}</span>
+    <div class="title">{{ shiList[currentIndex].title }}</div>
+    <span class="author">{{ shiList[currentIndex].author }}</span>
   </div>
   <ng-container *ngFor="let sentence of shiList[currentIndex].content">
-    <h1>{{sentence}}</h1>
+    <h1>{{ sentence }}</h1>
   </ng-container>
-  <button (click)="next()">下一首</button>
 </div>
-<div class="setting"><fa-icon class="fa-2x" [icon]="faCog"></fa-icon></div>
+<div class="setting">
+  <fa-icon class="fa-2x" [icon]="faCog" (click)="showDropdown()"></fa-icon>
+  <div id="myDropdown" class="dropdown-content" [class.show]="isShowDropdown">
+    <a href="#home">關於</a>
+    <a href="#about">專案</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<div class="next animate__animated animate__bounce" (click)="next()">
+  <fa-icon class="fa-4x" [icon]="faCaretRight"></fa-icon>
+</div>
 <!-- <div class="animate-area">
   <div class="top-left">
     <div
