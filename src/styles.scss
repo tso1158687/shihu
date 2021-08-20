@@ -15,8 +15,9 @@ body {
     position:relative;
     align-items:center;
     min-height:100vh;
-    background-color:rgb(118,218,255);
     overflow:hidden;
+    background-image: url('./assets/texture.png');
+    transition: background-color 2s ease-in;
  
     &:before, &:after {
         content:"";
@@ -24,7 +25,11 @@ body {
         left:50%;
         min-width:300vw;
         min-height:300vw;
-        background-color:#40809d;
+        background-color:#525288;
+        // #ffa631;
+        // #f1939c;
+
+        // #c04851;
 //         background: -webkit-linear-gradient(
 //     0deg,
 //     #ffa745 0%,

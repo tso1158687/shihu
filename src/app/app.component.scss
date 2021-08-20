@@ -1,6 +1,8 @@
 :host {
   width: 100vw;
   height: 100vh;
+  //#aba3a3
+  //#eee1bd
   background-color: #aba3a3;
   display: flex;
   justify-content: center;
@@ -11,15 +13,15 @@
   writing-mode: vertical-rl;
 }
 
-.shi-info{
+.shi-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .title{
+  .title {
     font-size: 3rem;
     font-weight: 700;
   }
-  .author{
+  .author {
     color: white;
     background-color: rgb(170, 25, 25);
     border-radius: 5px;
@@ -33,8 +35,8 @@ h1 {
   font-weight: 400;
 }
 
-.setting{
-  position:absolute;
+.setting {
+  position: absolute;
   cursor: pointer;
   top: 50px;
   right: 40px;
@@ -96,8 +98,9 @@ h1 {
 
 //dropdown
 .dropdown {
-  &:hover,&:focus{
-    background-color: #2980B9;
+  &:hover,
+  &:focus {
+    background-color: #2980b9;
   }
   position: relative;
   display: inline-block;
@@ -112,10 +115,10 @@ h1 {
   left: -125px;
   top: 50px;
   border-radius: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  a{
-    &:hover{
+  a {
+    &:hover {
       background-color: #ddd;
     }
     color: black;
@@ -125,4 +128,15 @@ h1 {
   }
 }
 
-.show {display: block;}
+.show {
+  display: block;
+}
+
+.color-name {
+  writing-mode: vertical-rl;
+  position: fixed;
+  font-size: 100px;
+  top: 20px;
+  left: -50px;
+  letter-spacing: 0.5em;
+}
