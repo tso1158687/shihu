@@ -64,7 +64,7 @@ export const ShiList: Shi[] = [
     ],
   },
   {
-    title: '咏鵝',
+    title: '詠鵝',
     author: '駱賓王',
     content: ['鵝鵝鵝，', '曲項向天歌。', '白毛浮綠水，', '紅掌撥清波。'],
   },
