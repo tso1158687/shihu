@@ -3,20 +3,55 @@
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
-  // background-image: url('./assets/texture.png');
-  // transition: background-color 2s ease-in;
   &.blue {
     &:before,
     &:after {
-      background-color: #40809d;
+      background-color: #3170a7;
     }
   }
   &.purple {
     &:before,
     &:after {
-      background-color: #525288;
+      background-color: #eee1bd;
     }
   }
+  &.red{
+    &:before,
+    &:after {
+      background-color: #c04851;
+    }
+  }
+  &.grey{
+    &:before,
+    &:after {
+      background-color: #7a7374;
+    }
+  }
+  &.red2{
+    &:before,
+    &:after {
+      background-color: #ea7293;
+    }
+  }
+  &.purple2{
+    &:before,
+    &:after {
+      background-color: #c8adc4;
+    }
+  }
+  &.white{
+    &:before,
+    &:after {
+      background-color: #d8e3e7;
+    }
+  }
+  &.blue2{
+    &:before,
+    &:after {
+      background-color: #497568;
+    }
+  }
+
   &:before,
   &:after {
     content: "";

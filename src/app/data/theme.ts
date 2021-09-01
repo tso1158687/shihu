@@ -4,7 +4,31 @@ export const themeList=[
         color:'purple'       
     },
     {
-        name:'樹寶藍',
+        name:'安安藍',
         color:'blue'
-    }
+    },
+    {
+        name:'玉紅',
+        color:'red'
+    },
+    {
+        name:'鋅灰',
+        color:'grey'
+    },
+    {
+        name:'鳳仙花紅',
+        color:'red2'
+    },
+    {
+        name:'鳳信紫',
+        color:'purple2'
+    },
+    {
+        name:'雲峰白',
+        color:'white'
+    },
+    {
+        name:'晚波藍',
+        color:'blue2'
+    },
 ]
