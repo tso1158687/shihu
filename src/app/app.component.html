@@ -1,4 +1,4 @@
-<!-- <h1>今人不見古時月，今月曾經照古人</h1> -->
+<div class="container" [ngClass]="getClassName()">
 <!-- animate__animated animate__bounce animate__slower animate__infinite -->
 <div class="main-area animate__animated animate__fadeIn animate__slower">
   <div class="shi-info">
@@ -13,12 +13,12 @@
   <fa-icon class="fa-2x" [icon]="faCog" (click)="toggleDropdown()"></fa-icon>
   <div class="dropdown-content" [class.show]="isShowDropdown">
     <a href="#home">關於</a>
-    <a href="#about">專案</a>
+    <a href="#about"> <fa-icon [icon]="faGithub"></fa-icon></a>
     <a href="#contact">Contact</a>
   </div>
 </div>
 <div class="color-name">
-  遠山紫
+  {{currentTheme.name}}
 </div>
 <!-- <div class="animate-area">
   <div class="top-left">
@@ -54,3 +54,4 @@
     ></div>
   </div>
 </div> -->
+</div>

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faCog, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Shi } from './type/shi.type';
 import { ShiList } from './data/shi-list';
+import { themeList } from './data/theme';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,16 +11,22 @@ import { ShiList } from './data/shi-list';
 })
 export class AppComponent implements OnInit {
   faCog = faCog;
-  faCaretRight = faCaretRight;
+  faGithub = faGithub;
   currentIndex = 0;
   isShowDropdown = false;
   shiList: Shi[] = ShiList;
+  themeList = themeList;
+  currentTheme = this.themeList[ Number((Math.random() * ( this.themeList.length - 1)).toFixed())];
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.currentIndex = this.selectRandomIndex();
   }
 
-  toggleDropdown() {
+  getClassName(): string {
+    return this.currentTheme.color;
+  }
+
+  toggleDropdown(): void {
     this.isShowDropdown = !this.isShowDropdown;
   }
 

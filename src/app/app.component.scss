@@ -1,4 +1,75 @@
-:host {
+.container {
+  position: relative;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  // background-image: url('./assets/texture.png');
+  // transition: background-color 2s ease-in;
+  &.blue {
+    &:before,
+    &:after {
+      background-color: #40809d;
+    }
+  }
+  &.purple {
+    &:before,
+    &:after {
+      background-color: #525288;
+    }
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    min-width: 300vw;
+    min-height: 300vw;
+
+    // background-color:#40809d;
+    // #ffa631;
+    // #f1939c;
+
+    // #c04851;
+    //         background: -webkit-linear-gradient(
+    //     0deg,
+    //     #ffa745 0%,
+    //     #fe869f 30%,
+    //     #ef7ac8 45%,
+    //     #a083ed 70%,
+    //     #43aeff 85%
+    //   );
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  &:before {
+    bottom: 15vh;
+    border-radius: 45%;
+    animation-duration: 25s;
+  }
+
+  &:after {
+    bottom: 12vh;
+    opacity: 0.5;
+    border-radius: 47%;
+    animation-duration: 25s;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, 0) rotateZ(0deg);
+  }
+  50% {
+    transform: translate(-50%, -2%) rotateZ(180deg);
+  }
+  100% {
+    transform: translate(-50%, 0%) rotateZ(360deg);
+  }
+}
+
+.container {
   width: 100vw;
   height: 100vh;
   //#aba3a3
