@@ -1,8 +1,8 @@
 {
     "name": "詩乎",
     "version": "0.0.1",
-    "description": "大家一起來讀詩",
-    "permissions": ["storage", "tabs"],
+    "description": "一個分頁讀一首詩",
+    "permissions": ["tabs"],
     "background": {
       "scripts": ["background.js"],
       "persistent": false

@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
   shiList: Shi[] = ShiList;
   themeList = themeList;
   currentTheme = this.themeList[ Number((Math.random() * ( this.themeList.length - 1)).toFixed())];
-  // currentTheme = this.themeList[ this.themeList.length-1];
 
 
   ngOnInit(): void {
