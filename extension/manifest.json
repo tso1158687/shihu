@@ -2,7 +2,7 @@
     "name": "詩乎",
     "version": "0.0.1",
     "description": "一個分頁讀一首詩",
-    "permissions": ["tabs"],
+    "permissions": [],
     "background": {
       "scripts": ["background.js"],
       "persistent": false
