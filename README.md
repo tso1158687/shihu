@@ -40,7 +40,6 @@
 
 ### 動畫效果
 
-- animate.css
 - css animation
 
 ### 字體
